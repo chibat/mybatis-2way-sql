@@ -1,4 +1,4 @@
-package plugin;
+package mybatis.scripting.twowaysql;
 
 import org.apache.ibatis.executor.parameter.ParameterHandler;
 import org.apache.ibatis.mapping.BoundSql;

@@ -1,4 +1,4 @@
-package plugin;
+package mybatis.scripting.twowaysql;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -10,7 +10,7 @@ import org.apache.ibatis.mapping.ParameterMapping;
 import org.apache.ibatis.mapping.SqlSource;
 import org.apache.ibatis.session.Configuration;
 
-import plugin.TwoWaySqlParser.Result;
+import mybatis.scripting.twowaysql.TwoWaySqlParser.Result;
 
 /**
  * @author tomofumi

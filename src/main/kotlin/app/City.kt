@@ -7,7 +7,6 @@ class City {
     var state: String? = null
     var country: String? = null
 
-    override fun toString(): String {
-        return id?.toString() + "," + name + "," + state + "," + country
-    }
+    override fun toString(): String =
+            id?.toString() + "," + name + "," + state + "," + country
 }

@@ -1,4 +1,4 @@
-package plugin;
+package mybatis.scripting.twowaysql;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -22,7 +22,7 @@ import org.seasar.doma.jdbc.SqlNode;
 import org.seasar.doma.jdbc.dialect.Dialect;
 import org.seasar.doma.jdbc.dialect.StandardDialect;
 
-import plugin.TwoWaySqlParser.Result.Param;
+import mybatis.scripting.twowaysql.TwoWaySqlParser.Result.Param;
 
 /**
  */
