@@ -12,7 +12,8 @@ class Application(private val cityMapper: CityMapper) {
     fun sampleCommandLineRunner(): CommandLineRunner {
         return CommandLineRunner { args ->
             run {
-                println(this.cityMapper.find("CA", "US"))
+                println(this.cityMapper.findByAnnotation("CA", "US"))
+                println(this.cityMapper.findByMap(mapOf("state" to "CA", "country" to "US")))
             }
         }
     }

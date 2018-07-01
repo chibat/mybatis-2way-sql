@@ -19,5 +19,19 @@ interface CityMapper {
         AND state = /* state */'CA'
         /*%end*/
     """)
-    fun find(@Param("state") state: String?, @Param("country") country: String?): City
+    fun findByAnnotation(@Param("state") state: String?, @Param("country") country: String?): City
+
+    @Select("""
+        SELECT
+        id, name, state, country
+        FROM city
+        WHERE
+        /*%if country != null */
+        country = /* country */'US'
+        /*%end*/
+        /*%if state != null */
+        AND state = /* state */'CA'
+        /*%end*/
+    """)
+    fun findByMap(param: Map<String, String>): City
 }
